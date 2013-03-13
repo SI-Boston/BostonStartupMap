@@ -1,5 +1,5 @@
 BostonStartupMap::Application.routes.draw do
-  devise_for :users
+  devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   root :to => "companies#index"
