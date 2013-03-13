@@ -5,6 +5,8 @@ gem 'pg'
 gem 'carrierwave', git: "git://github.com/jnicklas/carrierwave.git" # File uploads
 gem 'rails_admin'
 gem 'haml'
+gem 'jquery-rails'
+gem "devise"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -24,7 +26,3 @@ end
 group :development do
   gem 'pry'
 end
-
-gem 'jquery-rails'
-
-gem "devise"

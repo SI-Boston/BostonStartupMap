@@ -1,0 +1,25 @@
+%nav.top-bar
+  %ul.title-area
+    %li.name
+      %h1
+        %a{ href: root_path } Boston Startup Map
+    %li.toggle-topbar.menu-icon
+      %a{ href: "#" }
+        %span Menu
+  %section.top-bar-section
+    %ul.left
+      %li.divider
+      %li.active
+        %a{ href: root_path } Home
+      %li.divider
+      - if user_signed_in?
+        %li
+          %a{ href: "/admin" } Admin
+    %ul.right
+      %li.divider.hide-for-small
+      %li
+        - if user_signed_in?
+          = link_to 'Logout', destroy_user_session_path, :method=>'delete'
+        - else
+          %a{ rel: "nofollow", href: new_user_session_path }
+            Login
