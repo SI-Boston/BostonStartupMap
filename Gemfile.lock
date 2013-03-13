@@ -186,6 +186,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   compass
   devise
+  haml
   jquery-rails
   pg
   pry
