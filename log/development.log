@@ -4515,3 +4515,542 @@ Completed 401 Unauthorized in 0ms
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-13 09:43:38 -0400
+Served asset /rails.png - 304 Not Modified (92ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 09:43:59 -0400
+
+ActionController::RoutingError (uninitialized constant CompanyController):
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  rack-pjax (0.7.0) lib/rack/pjax.rb:12:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call'
+  remotipart (1.0.5) lib/remotipart/middleware.rb:30:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__99751865914244994__call__2132401932211692805__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jamiedavidson/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/jamiedavidson/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/jamiedavidson/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 09:45:04 -0400
+Processing by CompaniesController#index as HTML
+  Rendered companies/index.html.haml within layouts/application (57.7ms)
+Compiled application.css  (1ms)  (pid 47086)
+Compiled jquery.js  (2ms)  (pid 47086)
+Compiled jquery_ujs.js  (0ms)  (pid 47086)
+Compiled application.js  (122ms)  (pid 47086)
+Completed 200 OK in 419ms (Views: 418.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 09:45:05 -0400
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 09:45:05 -0400
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 09:45:05 -0400
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 09:45:05 -0400
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-13 09:45:12 -0400
+Processing by Devise::SessionsController#new as HTML
+PG::Error: ERROR:  relation "users" does not exist
+LINE 5:              WHERE a.attrelid = '"users"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"users"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 224ms
+
+ActiveRecord::StatementInvalid (PG::Error: ERROR:  relation "users" does not exist
+LINE 5:              WHERE a.attrelid = '"users"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"users"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+):
+  activerecord (3.2.11) lib/active_record/connection_adapters/postgresql_adapter.rb:1153:in `async_exec'
+  activerecord (3.2.11) lib/active_record/connection_adapters/postgresql_adapter.rb:1153:in `exec_no_cache'
+  activerecord (3.2.11) lib/active_record/connection_adapters/postgresql_adapter.rb:662:in `block in exec_query'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+  activesupport (3.2.11) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+  activerecord (3.2.11) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `exec_query'
+  activerecord (3.2.11) lib/active_record/connection_adapters/postgresql_adapter.rb:1278:in `column_definitions'
+  activerecord (3.2.11) lib/active_record/connection_adapters/postgresql_adapter.rb:857:in `columns'
+  activerecord (3.2.11) lib/active_record/connection_adapters/schema_cache.rb:12:in `block in initialize'
+  activerecord (3.2.11) lib/active_record/model_schema.rb:228:in `yield'
+  activerecord (3.2.11) lib/active_record/model_schema.rb:228:in `default'
+  activerecord (3.2.11) lib/active_record/model_schema.rb:228:in `columns'
+  activerecord (3.2.11) lib/active_record/model_schema.rb:243:in `column_defaults'
+  activerecord (3.2.11) lib/active_record/base.rb:482:in `initialize'
+  devise (2.2.3) app/controllers/devise_controller.rb:102:in `new'
+  devise (2.2.3) app/controllers/devise_controller.rb:102:in `build_resource'
+  devise (2.2.3) app/controllers/devise/sessions_controller.rb:8:in `new'
+  actionpack (3.2.11) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.11) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.11) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:447:in `_run__590548943787837388__process_action__4168637807283542734__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.11) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.11) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.11) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.11) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.11) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.11) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.11) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.11) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.11) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.11) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/mapper.rb:42:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  rack-pjax (0.7.0) lib/rack/pjax.rb:12:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call'
+  remotipart (1.0.5) lib/remotipart/middleware.rb:30:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__99751865914244994__call__2132401932211692805__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jamiedavidson/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/jamiedavidson/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/jamiedavidson/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.5ms)
+Connecting to database specified by database.yml
+  [1m[36m (23.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCompanies (20130312224003)
+Migrating to CreateRailsAdminHistoriesTable (20130313035149)
+Migrating to DeviseCreateUsers (20130313040032)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (182.4ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (2.5ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (1.8ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (18.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130313040032')
+  [1m[36m (13.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-13 09:45:56 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (24.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (250.5ms)
+Completed 200 OK in 338ms (Views: 276.3ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 09:45:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 09:45:56 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 09:45:56 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 09:45:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-13 09:52:49 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fUFdrtCwmcGCW6dzntIlum5gvh1PCv7c02kohuMDuXU=", "user"=>{"email"=>"jhdavids8@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'jhdavids8@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (28.2ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-03-13 13:52:49.654148', "current_sign_in_at" = '2013-03-13 13:52:49.654148', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-13 13:52:49.680905' WHERE "users"."id" = 1[0m
+  [1m[35m (1.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 433ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-13 09:52:49 -0400
+Processing by CompaniesController#index as HTML
+  Rendered companies/index.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-13 09:52:50 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 09:52:50 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 09:52:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-13 09:52:50 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2013-03-13 09:52:56 -0400
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (146.3ms)[0m  SELECT COUNT(*) FROM "companies" 
+  [1m[36mCompany Load (134.2ms)[0m  [1mSELECT "companies".* FROM "companies" ORDER BY updated_at desc LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY updated_at desc LIMIT 1[0m
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/rails_admin-0.4.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (48.9ms)
+Compiled rails_admin/rails_admin.css  (6025ms)  (pid 47086)
+Compiled jquery.iframe-transport.js  (0ms)  (pid 47086)
+Compiled rails_admin/jquery.remotipart.fixed.js  (12ms)  (pid 47086)
+Compiled jquery.ui.effect.js  (0ms)  (pid 47086)
+Compiled jquery.ui.core.js  (1ms)  (pid 47086)
+Compiled jquery.ui.widget.js  (0ms)  (pid 47086)
+Compiled jquery.ui.mouse.js  (5ms)  (pid 47086)
+Compiled jquery.ui.sortable.js  (122ms)  (pid 47086)
+Compiled jquery.ui.position.js  (0ms)  (pid 47086)
+Compiled jquery.ui.menu.js  (41ms)  (pid 47086)
+Compiled jquery.ui.autocomplete.js  (57ms)  (pid 47086)
+Compiled jquery.ui.datepicker.js  (4ms)  (pid 47086)
+Compiled rails_admin/jquery.ui.timepicker.js  (1ms)  (pid 47086)
+Compiled rails_admin/ra.datetimepicker.js  (0ms)  (pid 47086)
+Compiled rails_admin/jquery.colorpicker.js  (0ms)  (pid 47086)
+Compiled rails_admin/ra.filter-box.js  (0ms)  (pid 47086)
+Compiled rails_admin/ra.filtering-multiselect.js  (0ms)  (pid 47086)
+Compiled rails_admin/ra.filtering-select.js  (0ms)  (pid 47086)
+Compiled rails_admin/ra.remote-form.js  (0ms)  (pid 47086)
+Compiled rails_admin/jquery.pjax.js  (0ms)  (pid 47086)
+Compiled jquery_nested_form.js  (0ms)  (pid 47086)
+Compiled rails_admin/ra.nested-form-hooks.js  (5505ms)  (pid 47086)
+Compiled bootstrap-transition.js  (1ms)  (pid 47086)
+Compiled bootstrap-affix.js  (0ms)  (pid 47086)
+Compiled bootstrap-alert.js  (0ms)  (pid 47086)
+Compiled bootstrap-button.js  (0ms)  (pid 47086)
+Compiled bootstrap-carousel.js  (0ms)  (pid 47086)
+Compiled bootstrap-collapse.js  (0ms)  (pid 47086)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 47086)
+Compiled bootstrap-modal.js  (0ms)  (pid 47086)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 47086)
+Compiled bootstrap-tab.js  (0ms)  (pid 47086)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 47086)
+Compiled bootstrap-popover.js  (0ms)  (pid 47086)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 47086)
+Compiled bootstrap.js  (519ms)  (pid 47086)
+Compiled rails_admin/ra.widgets.js  (294ms)  (pid 47086)
+Compiled rails_admin/ui.js  (274ms)  (pid 47086)
+Compiled rails_admin/custom/ui.js  (161ms)  (pid 47086)
+Compiled rails_admin/rails_admin.js  (7936ms)  (pid 47086)
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/rails_admin-0.4.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (15.8ms)
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/rails_admin-0.4.5/app/views/layouts/rails_admin/pjax.html.haml (19.8ms)
+Completed 200 OK in 14931ms (Views: 14591.5ms | ActiveRecord: 286.3ms)
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:12 -0400
+Served asset /jquery.ui.effect.js - 200 OK (127ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:12 -0400
+Served asset /jquery.iframe-transport.js - 200 OK (25ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2013-03-13 09:53:12 -0400
+Served asset /rails_admin/rails_admin.css - 200 OK (407ms)
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:12 -0400
+Served asset /rails_admin/jquery.remotipart.fixed.js - 200 OK (53ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:12 -0400
+Served asset /jquery.ui.core.js - 200 OK (275ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:13 -0400
+Served asset /jquery.ui.widget.js - 200 OK (50ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:13 -0400
+Served asset /jquery.ui.sortable.js - 200 OK (32ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:13 -0400
+Served asset /jquery.ui.mouse.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:13 -0400
+Served asset /jquery.ui.position.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:13 -0400
+Served asset /jquery.ui.menu.js - 200 OK (13ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:13 -0400
+Served asset /jquery.ui.autocomplete.js - 200 OK (836ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:14 -0400
+Served asset /rails_admin/jquery.ui.timepicker.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:14 -0400
+Served asset /jquery.ui.datepicker.js - 200 OK (416ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:15 -0400
+Served asset /rails_admin/jquery.colorpicker.js - 200 OK (2ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:15 -0400
+Served asset /rails_admin/ra.datetimepicker.js - 200 OK (2ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:15 -0400
+Served asset /rails_admin/ra.filter-box.js - 200 OK (120ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:15 -0400
+Served asset /rails_admin/ra.filtering-multiselect.js - 200 OK (2ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:15 -0400
+Served asset /rails_admin/ra.filtering-select.js - 200 OK (3ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:16 -0400
+Served asset /rails_admin/ra.remote-form.js - 200 OK (5ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:16 -0400
+Served asset /rails_admin/jquery.pjax.js - 200 OK (114ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:16 -0400
+Served asset /jquery_nested_form.js - 200 OK (191ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:17 -0400
+Served asset /rails_admin/ra.nested-form-hooks.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:17 -0400
+Served asset /bootstrap-transition.js - 200 OK (33ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:17 -0400
+Served asset /bootstrap-alert.js - 200 OK (143ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:17 -0400
+Served asset /bootstrap-affix.js - 200 OK (71ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:17 -0400
+Served asset /bootstrap-button.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:18 -0400
+Served asset /bootstrap-carousel.js - 200 OK (54ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:18 -0400
+Served asset /bootstrap-dropdown.js - 200 OK (37ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:18 -0400
+Served asset /bootstrap-collapse.js - 200 OK (7ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:18 -0400
+Served asset /bootstrap-modal.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:18 -0400
+Served asset /bootstrap-scrollspy.js - 200 OK (82ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:18 -0400
+Served asset /bootstrap-tab.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:18 -0400
+Served asset /bootstrap-tooltip.js - 200 OK (96ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:18 -0400
+Served asset /bootstrap-popover.js - 200 OK (28ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:18 -0400
+Served asset /bootstrap-typeahead.js - 200 OK (6ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:18 -0400
+Served asset /rails_admin/ra.widgets.js - 200 OK (95ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:19 -0400
+Served asset /bootstrap.js - 200 OK (17ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:19 -0400
+Served asset /rails_admin/ui.js - 200 OK (2ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:19 -0400
+Served asset /rails_admin/custom/ui.js - 200 OK (2ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:19 -0400
+Served asset /rails_admin/rails_admin.js - 200 OK (183ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:19 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-13 09:53:19 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2013-03-13 09:53:22 -0400
+Served asset /fontawesome-webfont.woff - 200 OK (41ms)
+
+
+Started GET "/admin/company/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2013-03-13 09:53:54 -0400
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"company"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/rails_admin-0.4.5/app/views/rails_admin/main/_form_field.html.haml (1.5ms)
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/rails_admin-0.4.5/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/rails_admin-0.4.5/app/views/rails_admin/main/_form_text.html.haml (40.2ms)
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/rails_admin-0.4.5/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/rails_admin-0.4.5/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/rails_admin-0.4.5/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/rails_admin-0.4.5/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/rails_admin-0.4.5/app/views/rails_admin/main/_form_file_upload.html.haml (3.6ms)
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/rails_admin-0.4.5/app/views/rails_admin/main/_submit_buttons.html.haml (46.6ms)
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/rails_admin-0.4.5/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (204.9ms)
+Completed 200 OK in 360ms (Views: 310.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/company?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2013-03-13 09:54:30 -0400
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"company"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCompany Load (39.5ms)[0m  SELECT "companies".* FROM "companies" ORDER BY companies.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "companies" [0m
+  Rendered /Users/jamiedavidson/.rvm/gems/ruby-1.9.2-p290@BostonStartupMap/gems/rails_admin-0.4.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (970.1ms)
+Completed 200 OK in 1004ms (Views: 956.7ms | ActiveRecord: 40.4ms)
