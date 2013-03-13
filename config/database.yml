@@ -17,7 +17,7 @@ development:
   encoding: unicode
   database: BostonStartupMap_development
   pool: 5
-  username: BostonStartupMap
+  username: jamiedavidson
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
