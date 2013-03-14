@@ -11,19 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130313040032) do
+ActiveRecord::Schema.define(:version => 20130314030420) do
 
   create_table "companies", :force => true do |t|
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-    t.string   "name",        :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "name",            :null => false
     t.string   "url"
     t.text     "description"
-    t.string   "address",     :null => false
-    t.integer  "zip",         :null => false
+    t.string   "address",         :null => false
+    t.integer  "zip",             :null => false
     t.float    "latitude"
     t.float    "longitude"
     t.string   "image"
+    t.string   "twitter_handle"
+    t.string   "facebook_handle"
   end
 
   create_table "rails_admin_histories", :force => true do |t|
