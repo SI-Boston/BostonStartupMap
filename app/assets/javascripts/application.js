@@ -7,5 +7,4 @@
 //= require angular/StartupMap
 //= require angular/controllers
 //= require common
-//= require map
 $(document).foundation();

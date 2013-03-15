@@ -1,5 +1,5 @@
 @CompaniesCtrl = ['$scope', '$http', ($scope, $http) ->
-  markerFactory: (mrkr) ->
+  markerFactory = (mrkr) ->
     elem = mapbox.markers.simplestyle_factory(mrkr)
     MM.addEvent(elem, 'mouseover', (e) => #on marker mouseover
       # Jamie: Display company name here
@@ -13,14 +13,14 @@
     )
     elem
 
-  makeMapMarkers: (companies_json) ->
+  makeMapMarkers = (companies_json) ->
     markers = []
     for c in companies_json
       if c.latitude && c.longitude
         markers.push companyMarker(c)
     markers
 
-  companyMarker: (c) ->
+  companyMarker = (c) ->
     {
       geometry: { coordinates: [c.longitude, c.latitude] }
       properties:
@@ -32,8 +32,8 @@
         description: 'Test'
     }
 
-  mapbox.load 'chuka.map-rvhdpssw', (o) =>
-    $scope.map = mapbox.map('startup-map')
+  mapbox.auto('startup-map', 'chuka.map-rvhdpssw', (map, o) ->
+    $scope.map = map
     setTimeout (=>
       $scope.map.addLayer o.layer
       $scope.map.ui.zoomer.add()
@@ -48,6 +48,7 @@
       $scope.map.addLayer $scope.markerLayer
       $scope.markerLayer.features makeMapMarkers($scope.companies)
     ), 100
+  )
 
   $http.get('/companies.json', {}).success((response) ->
     $scope.companies = response
