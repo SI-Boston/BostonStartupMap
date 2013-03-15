@@ -7,6 +7,7 @@ require "action_mailer/railtie"
 require "active_resource/railtie"
 require "sprockets/railtie"
 require "zurb-foundation"
+require 'yajl'
 # require "rails/test_unit/railtie"
 
 if defined?(Bundler)

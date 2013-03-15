@@ -1,1 +1,5 @@
 %h1 Boston Startup Map
+%div{ "ng-app" => "StartupMap" }
+  %div{ "ng-controller" => "CompaniesCtrl" }
+    %div{ "ng-repeat" => "company in companies" }
+      {{company.name}}

@@ -4,9 +4,10 @@ gem 'rails', '3.2.11'
 gem 'pg'
 gem 'carrierwave', git: "git://github.com/jnicklas/carrierwave.git" # File uploads
 gem 'rails_admin'
-gem 'haml'
 gem 'jquery-rails'
 gem "devise"
+gem 'rabl'
+gem 'yajl-ruby'
 
 # Gems used only for assets and not required
 # in production environments by default.
