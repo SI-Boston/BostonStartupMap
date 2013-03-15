@@ -36,9 +36,6 @@
     $scope.map = map
     setTimeout (=>
       $scope.map.addLayer o.layer
-      $scope.map.ui.zoomer.add()
-      $scope.map.setZoomRange(0, 8)
-      $scope.map.ui.zoombox.add() #SHIFT+click to zoom to bounding box #TODO - add this info to ui?
       $scope.markerLayer = mapbox.markers.layer()
       interaction = mapbox.markers.interaction($scope.markerLayer)
       interaction.showOnHover false
