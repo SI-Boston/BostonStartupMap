@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130314030420) do
+ActiveRecord::Schema.define(:version => 20130315210707) do
 
   create_table "companies", :force => true do |t|
     t.datetime "created_at",      :null => false
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20130314030420) do
     t.string   "image"
     t.string   "twitter_handle"
     t.string   "facebook_handle"
+    t.string   "category"
   end
 
   create_table "rails_admin_histories", :force => true do |t|

@@ -1,8 +1,10 @@
 @CompaniesCtrl = ['$scope', '$http', ($scope, $http) ->
+  $scope.hovered_company = ""
+  
   markerFactory = (mrkr) ->
     elem = mapbox.markers.simplestyle_factory(mrkr)
     MM.addEvent(elem, 'mouseover', (e) => #on marker mouseover
-      # Jamie: Display company name here
+      $scope.hovered_company = mrkr.properties.title
     )
     MM.removeEvent(elem, 'click')
     MM.addEvent(elem, 'click', (e) => #on marker click

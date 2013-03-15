@@ -2,5 +2,7 @@
 %div{ "ng-app" => "StartupMap" }
   %div{ "ng-controller" => "CompaniesCtrl" }
     #startup-map
+    #startup-map-details.panel
+      {{hovered_company}}
     %div{ "ng-repeat" => "company in companies" }
       {{company.name}}
