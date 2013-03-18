@@ -4,6 +4,7 @@
 //= require mapbox
 //= require angular
 //= require angular-resource
+//= require ng-infinite-scroll
 //= require angular/StartupMap
 //= require angular/controllers
 //= require common

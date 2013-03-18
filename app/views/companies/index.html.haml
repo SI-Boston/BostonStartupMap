@@ -1,8 +1,16 @@
 %h1 Boston Startup Map
-%div{ "ng-app" => "StartupMap" }
-  %div{ "ng-controller" => "CompaniesCtrl" }
-    #startup-map
-    #startup-map-details.panel
-      {{hovered_company}}
-    %div{ "ng-repeat" => "company in companies" }
-      {{company.name}}
+%div{ "ng-app" => "StartupMap", "ng-controller" => "CompaniesCtrl" }
+  .row
+    .large-9.small-12.columns
+      %section#startup-map
+    .large-3.small-12.columns#startup-companies
+      .section-container.accordion{ data: { section: "" } }
+        %div{ "infinite-scroll" => 'loadMoreCompanies()', "infinite-scroll-distance" => '2', 'infinite-scroll-immediate-check' => 'false' }
+          %div{ "ng-repeat" => "company in visibleCompanies" }
+            %section.section
+              %p.title
+                %a{ href: "javascript: void(0)" }
+                  {{company.name}}
+              .content
+                %p
+                  {{company.description}}

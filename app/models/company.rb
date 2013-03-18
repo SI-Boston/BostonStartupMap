@@ -6,7 +6,6 @@ class Company < ActiveRecord::Base
   before_create :geocode    
 
   def category_enum
-    # Do not select any value, or add any blank field. RailsAdmin will do it for you.
     ['Startup', 'Accelerator/Incubator', 'Investor', 'Co-working space', 'Hang-out spot']
   end
 
