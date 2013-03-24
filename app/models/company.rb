@@ -6,7 +6,7 @@ class Company < ActiveRecord::Base
   before_create :geocode    
 
   def category_enum
-    ['Startup', 'Accelerator/Incubator', 'Investor', 'Co-working space', 'Hang-out spot']
+     ['Startup', 'Accelerator/Incubator', 'Venture Capitalist', 'Angel Investor', 'Co-working space', 'Hang-out spot', 'Event']
   end
 
   def full_street_address
