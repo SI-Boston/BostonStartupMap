@@ -5,8 +5,8 @@
       %section#startup-map
     .large-3.small-12.columns#startup-companies
       .section-container.accordion{ data: { section: "" } }
-        %div{ "infinite-scroll" => 'loadMoreCompanies()', "infinite-scroll-distance" => '2', 'infinite-scroll-immediate-check' => 'false' }
-          %div{ "ng-repeat" => "company in visibleCompanies" }
+        %div
+          %div{ "ng-repeat" => "company in companies" }
             %section.section
               %p.title
                 %a{ href: "javascript: void(0)" }

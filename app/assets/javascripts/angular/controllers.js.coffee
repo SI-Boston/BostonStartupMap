@@ -1,7 +1,7 @@
 @startupApp.controller 'CompaniesCtrl', (['$scope', '$http', ($scope, $http) ->
-  $scope.loadMoreCompanies = () ->
-    last = $scope.visibleCompanies.length - 1
-    $scope.visibleCompanies = $scope.visibleCompanies.concat($scope.companies.slice(last, last + 10))
+  # $scope.loadMoreCompanies = () ->
+  #   last = $scope.visibleCompanies.length - 1
+  #   $scope.visibleCompanies = $scope.visibleCompanies.concat($scope.companies.slice(last, last + 10))
 
   markerFactory = (mrkr) ->
     elem = mapbox.markers.simplestyle_factory(mrkr)
@@ -50,7 +50,7 @@
 
   $http.get('/companies.json', {}).success((response) ->
     $scope.companies = response
-    $scope.visibleCompanies = response.slice(0, 10)
+    # $scope.visibleCompanies = response.slice(0, 10)
     if $scope.markerLayer
       $scope.markerLayer.features makeMapMarkers(response)
   ).error((error) ->
