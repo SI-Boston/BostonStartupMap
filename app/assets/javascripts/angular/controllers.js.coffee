@@ -14,6 +14,9 @@
         lon: mrkr.geometry.coordinates[0]
       }).zoom($scope.map.zoom()).optimal()
     )
+
+    elem.className = 'marker-image'
+    elem.setAttribute('src', mrkr.properties.image)
     elem
 
   makeMapMarkers = (companies_json) ->
@@ -27,12 +30,10 @@
     {
       geometry: { coordinates: [c.longitude, c.latitude] }
       properties:
-        'marker-color': '#3A87AD' # badge info
-        'marker-size': 'small'
-        id: c.id
-        type: 'company'
-        title: c.name
-        description: 'Test'
+        id: c.id,
+        type: 'company',
+        title: c.name,
+        image: c.marker
     }
 
   mapbox.auto('startup-map', 'chuka.map-rvhdpssw', (map, o) ->
