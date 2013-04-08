@@ -17,6 +17,7 @@
 
     elem.className = 'marker-image'
     elem.setAttribute('src', mrkr.properties.image)
+    $scope.markers[mrkr.properties.id] = elem
     elem
 
   makeMapMarkers = (companies_json) ->
@@ -26,6 +27,9 @@
         markers.push companyMarker(c)
     markers
 
+  $scope.selectMarker = (id) ->
+    $($scope.markers[id]).click()
+
   companyMarker = (c) ->
     {
       geometry: { coordinates: [c.longitude, c.latitude] }
@@ -33,11 +37,13 @@
         id: c.id,
         type: 'company',
         title: c.name,
+        description: c.address,
         image: c.marker
     }
 
   mapbox.auto('startup-map', 'chuka.map-rvhdpssw', (map, o) ->
     $scope.map = map
+    $scope.markers = {}
     $scope.map.addLayer o.layer
     $scope.markerLayer = mapbox.markers.layer()
     interaction = mapbox.markers.interaction($scope.markerLayer)
@@ -50,8 +56,13 @@
   )
 
   $http.get('/companies.json', {}).success((response) ->
-    $scope.companies = response
-    # $scope.visibleCompanies = response.slice(0, 10)
+    $scope.startups = _.where(response, {category: "Startup"})
+    $scope.vcs = _.where(response, {category: "Venture Capitalist"})
+    $scope.angels = _.where(response, {category: "Angel Investor"})
+    $scope.accelerators = _.where(response, {category: "Accelerator/Incubator"})
+    $scope.coworking = _.where(response, {category: "Co-working space"})
+    $scope.hangouts = _.where(response, {category: "Hang-out spot"})
+    $scope.events = _.where(response, {category: "Event"})
     if $scope.markerLayer
       $scope.markerLayer.features makeMapMarkers(response)
   ).error((error) ->

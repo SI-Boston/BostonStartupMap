@@ -2,24 +2,20 @@
   %ul.title-area
     %li.name
       %h1
-        %a{ href: root_path } Boston Startup Map
+        %a{ href: root_path } 
+          %img{ src: "/assets/logo.png", alt: "TechScene Boston" }
     %li.toggle-topbar.menu-icon
       %a{ href: "#" }
         %span Menu
   %section.top-bar-section
-    %ul.left
-      %li.divider
-      %li.active
-        %a{ href: root_path } Home
+    %ul.right
       %li.divider
       - if user_signed_in?
         %li
           %a{ href: "/admin" } Admin
-    %ul.right
-      %li.divider.hide-for-small
-      %li
-        - if user_signed_in?
+      - if user_signed_in?
+        %li.divider
+        %li
           = link_to 'Logout', destroy_user_session_path, :method=>'delete'
-        - else
-          %a{ rel: "nofollow", href: new_user_session_path }
-            Login
+      %li.payitforward<
+        %a{ href: "#", data: { "reveal-id" => "payforward" } } #payitforward

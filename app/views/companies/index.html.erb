@@ -1,0 +1,130 @@
+<div class='row' ng-app="StartupMap" ng-controller="CompaniesCtrl" >
+    <div class='large-9 small-12 columns'>
+        <section id='startup-map'></section>
+    </div>
+    <div class='large-3 small-12 columns'>
+        <div class="section-container">
+            <section class='section'>
+                <form action="">
+                    <div class="row">
+                        <div class="small-3 large-2 columns">
+                            <span class="prefix"><img src="/assets/search.svg" alt="Search"></span>
+                        </div>
+                        <div class="small-9 large-10 columns">
+                            <input type="text" placeholder="Search" ng-model="query">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div class='section-container accordion' id="map-select" data-section=''>
+            <section class='section'>
+                <p class='title'>
+                    <a href='javascript: void(0)'>
+                    Startups
+                    </a>
+                </p>
+                <div class='content'>
+                    <ul class="side-nav">
+                        <div ng-repeat="company in startups | filter:query">
+                            <li>
+                                <a href='javascript: void(0)' ng-click="selectMarker(company.id)">{{company.name}}</a>
+                            </li>
+                            <li class="divider"></li>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+            <section class='section'>
+                <p class='title'>
+                    <a href='javascript: void(0)'>
+                    Venture Capitalists
+                    </a>
+                </p>
+                <div class='content'>
+                    <ul class="side-nav">
+                        <li ng-repeat="company in vcs | filter:query">
+                            <a href='javascript: void(0)' ng-click="selectMarker(company.id)">{{company.name}}</a>
+                        </li>
+                        <li class="divider"></li>
+                    </ul>
+                </div>
+            </section>
+            <section class='section'>
+                <p class='title'>
+                    <a href='javascript: void(0)'>
+                    Angels
+                    </a>
+                </p>
+                <div class='content'>
+                    <ul class="side-nav">
+                        <li ng-repeat="company in angels | filter:query">
+                            <a href='javascript: void(0)' ng-click="selectMarker(company.id)">{{company.name}}</a>
+                        </li>
+                        <li class="divider"></li>
+                    </ul>
+                </div>
+            </section>
+            <section class='section'>
+                <p class='title'>
+                    <a href='javascript: void(0)'>
+                    Accellerators &amp; Incubators
+                    </a>
+                </p>
+                <div class='content'>
+                    <ul class="side-nav">
+                        <li ng-repeat="company in accelerators | filter:query">
+                            <a href='javascript: void(0)' ng-click="selectMarker(company.id)">{{company.name}}</a>
+                        </li>
+                        <li class="divider"></li>
+                    </ul>
+                </div>
+            </section>
+            <section class='section'>
+                <p class='title'>
+                    <a href='javascript: void(0)'>
+                    Co-working
+                    </a>
+                </p>
+                <div class='content'>
+                    <ul class="side-nav">
+                        <li ng-repeat="company in coworking | filter:query">
+                            <a href='javascript: void(0)' ng-click="selectMarker(company.id)">{{company.name}}</a>
+                        </li>
+                        <li class="divider"></li>
+                    </ul>
+                </div>
+            </section>
+            <section class='section'>
+                <p class='title'>
+                    <a href='javascript: void(0)'>
+                    Hang Out Spots
+                    </a>
+                </p>
+                <div class='content'>
+                    <ul class="side-nav">
+                        <li ng-repeat="company in hangouts | filter:query">
+                            <a href='javascript: void(0)' ng-click="selectMarker(company.id)">{{company.name}}</a>
+                        </li>
+                        <li class="divider"></li>
+                    </ul>
+                </div>
+            </section>
+            <section class='section'>
+                <p class='title'>
+                    <a href='javascript: void(0)'>
+                    Events
+                    </a>
+                </p>
+                <div class='content'>
+                    <ul class="side-nav">
+                        <li ng-repeat="company in events | filter:query">
+                            <a href='javascript: void(0)' ng-click="selectMarker(company.id)">{{company.name}}</a>
+                        </li>
+                        <li class="divider"></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

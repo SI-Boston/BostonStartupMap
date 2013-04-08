@@ -1,6 +1,7 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require foundation
+//= require underscore
 //= require mapbox
 //= require angular
 //= require angular-resource

@@ -1,12 +1,123 @@
-$mapHeight: 500px;
-
-#startup-map {
-  height: $mapHeight;
-  width: 100%;
+.top-bar .name h1 {
+  padding-top: .3em;
+}
+.top-bar-section .payitforward a {
+  color: #e66d6a;
+}
+.top-bar-section ul li > a:hover {
+  background: darken(#46433a, 10%);
+}
+.top-bar-section ul li > a {
+  background: darken(#46433a, 5%);
 }
 
-#startup-companies {
-  height: $mapHeight;
-  overflow-y: auto;
-  overflow-x: hidden;
+@media only screen and (min-width: 58.75em) {
+  .top-bar-section li a:not(.button):hover {
+    background: darken(#46433a, 10%);
+  }
+}
+
+.row.notes {
+  margin-bottom: 1em;
+}
+
+.row.map {
+  margin: 0;
+  max-width: 100%;
+
+  &.row .row {
+    margin: 0;
+  }
+
+  .section-container {
+    margin-bottom: 0;
+    border: 0;
+
+    .section {
+      border-top: 0;
+
+      &.active:before {
+          content: '';
+          position: absolute;
+          left: -40px;
+          top: 0;
+          border-style: solid;
+          border-width: 24px 40px 24px 0;
+          border-color: transparent darken($primary-color, 5%) transparent transparent;
+      }
+
+      .title {
+        background-color: $primary-color;
+
+        &:hover {
+          background-color: darken($primary-color, 5%);
+        }
+      }
+
+      &.active .title {
+        background-color: darken($primary-color, 5%);
+      }
+
+      .content {
+        background-color: #ded4b9;
+        overflow-y: auto;
+        max-height: 250px;
+      }
+    }
+  }
+
+  & form {
+    margin: 0;
+
+    & input {
+      margin-bottom: 0;
+      height: 3em;
+      border: 0;
+    }
+  }
+}
+
+span.prefix {
+  padding-top: .6em;
+  border-color: darken($primary-color, 5%); 
+  height: 3em; //added
+  border-right: 1px solid darken($primary-color, 5%);
+}
+
+.row.map .column, .row.map .columns {
+  padding: 0;
+}
+
+.prime-color {
+  color: $primary-color;
+}
+
+.credits {
+  width: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 36px;
+  background-color: #46433a;
+
+  .credits-inner {
+  padding: 2px 7px;
+  width: 430px;
+  float: right;
+  text-align: right;
+  color: #fff;
+
+  img { vertical-align: middle;}
+  }
+
+  .social {
+    float: left;
+    width: 250px;
+    padding-top: 8px;
+    padding-left: 10px;
+
+    .fb_edge_widget_with_comment {
+    vertical-align: top;
+    }
+  }
 }
