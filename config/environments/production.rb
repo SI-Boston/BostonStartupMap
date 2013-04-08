@@ -13,6 +13,7 @@ BostonStartupMap::Application.configure do
   config.assets.compress = true
   config.assets.compile = false
   config.assets.digest = true
+  config.assets.precompile += ["common.js"]
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
