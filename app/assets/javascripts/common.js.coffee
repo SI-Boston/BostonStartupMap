@@ -1,5 +1,5 @@
 jQuery ->
-  handleSizing = () ->
+  window.handleSizing = () ->
     console.log("resized")
     h = $(window).height()
     topBar = $('.top-bar').height()
@@ -10,6 +10,6 @@ jQuery ->
     $('#map-select .content').height(h - (topBar + search) - (section * 7) - credits)
 
   $(window).resize ->
-    handleSizing()
+    window.handleSizing()
 
-  handleSizing()  
+  window.handleSizing()  
