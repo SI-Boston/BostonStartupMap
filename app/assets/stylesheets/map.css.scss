@@ -11,6 +11,28 @@
   background: darken(#46433a, 5%);
 }
 
+.marker-popup {
+  background-color: #DED4B9;
+  border: 0;
+  padding: .8em;
+
+  &:before {
+    border: 0;
+  }
+
+  &:after {
+    border-top-color: #DED4B9;
+  }
+
+  .marker-title {
+    font-weight: 700;
+  }
+
+  .marker-description {
+    text-align: center;
+  }
+}
+
 @media only screen and (min-width: 58.75em) {
   .top-bar-section li a:not(.button):hover {
     background: darken(#46433a, 10%);

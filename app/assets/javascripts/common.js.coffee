@@ -1,5 +1,6 @@
 jQuery ->
   handleSizing = () ->
+    console.log("resized")
     h = $(window).height()
     topBar = $('.top-bar').height()
     search = $('.row.map form').height()
