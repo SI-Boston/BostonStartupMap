@@ -8,4 +8,5 @@
 //= require ng-infinite-scroll
 //= require angular/StartupMap
 //= require angular/controllers
+//= require map
 $(document).foundation();
